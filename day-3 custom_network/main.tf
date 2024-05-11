@@ -9,6 +9,7 @@ resource "aws_vpc" "raj" {
   # create subnet
   resource "aws_subnet" "raj" {
     vpc_id = aws_vpc.raj.id
+    availability_zone = "ap-south-1a"
     cidr_block = "10.0.0.0/24"
     tags = {
       Name = "my_subnet"
@@ -78,7 +79,9 @@ resource "aws_vpc" "raj" {
    resource "aws_instance" "raj" {
     ami = var.ami
     instance_type = var.instance_type
+    availability_zone = "ap-south-1a"
     key_name = var.keyname
+    vpc_security_group_ids = [ aws_security_group.raj.id ]
     subnet_id = aws_subnet.raj.id
     tags = {
       Name = "sai"
