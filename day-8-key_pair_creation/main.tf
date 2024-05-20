@@ -2,6 +2,7 @@
 resource "aws_key_pair" "raj" {
   key_name   = "public"
  public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIK1otx/NcMDGCHI+cTvki+NM7HfUlWmQKArUBkZTaw3 kurum@MSI"
+
 }
 
 #create ec2 instance
