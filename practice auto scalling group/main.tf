@@ -107,7 +107,7 @@ resource "aws_instance" "raj1" {
     tags = {
       Name = "raj1"
     }
-  
+
 }
 
 
@@ -182,3 +182,4 @@ launch_configuration = aws_launch_configuration.raj.id
 target_group_arns = [ "${aws_lb_target_group.raj.arn}" ]
 
 }
+ 
