@@ -6,7 +6,7 @@ resource "aws_instance" "raj" {
     Name = "raj"
   }
 }
-#resource "aws_s3_bucket" "name" {
-  #bucket = "duihiuhdsdwf"
+resource "aws_s3_bucket" "name" {
+  bucket = "duihiuhdsdwf"
   
-#}
+}
