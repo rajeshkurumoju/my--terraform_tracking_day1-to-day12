@@ -7,6 +7,6 @@ resource "aws_instance" "raj" {
   }
 }
 #resource "aws_s3_bucket" "name" {
-  bucket = "duihiuhdsdwf"
+  #bucket = "duihiuhdsdwf"
   
-}
+#}
